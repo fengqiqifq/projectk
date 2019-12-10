@@ -24,34 +24,14 @@
     <div id="login_con">
 			<div id="login_conbox">
 				<h4>用户登录</h4>
-				<div id="lgform">
-					<div id="name">
-						<input type="text" id="user" placeholder="用户名"/>
-					</div>
-					<div id="mima">
-						<input type="password" id="pass" placeholder="填写密码"/>
-					</div>
-					<div id="jizhu">
-						<span>
-							<input type="checkbox" id="for_remeber"/>
-							<label for="for_remeber" class="for_remebertxt">记住账号</label>
-							<input type="checkbox" id="for_autologin"/>
-							<label for="for_autologin" class="for_autologintxt">两周内自动登录</label>
-						</span>
-					</div>
-					<div id="dl">
-						<a id="sub">登  录</a>
-					</div>
-				</div>
-				<p id="weixin">
-					<!-- <a href="#"><img src="images/weixin.png"/></a>
-					<a href="#"><img src="images/weibo.png"/></a>
-					<a href="#"><img src="images/qqlogin.png"/></a> -->
+				<span>用户名：</span><input type="text" id="user" /><br />
+	<span>密码：</span><input type="text" id="pass" /><br />
+	
 					<a href="#" id="forget">忘记密码</a>
-					<a href="register.html" id="free_reg">免费注册</a>
+					<a href="index.html" id="free_reg">去登录</a>
 				</p>
 			</div>
-			<span id="s">登录成功，2秒后自动跳转...</span>
+
         </div>
         <footer>
                 <div class="margin">
@@ -74,6 +54,7 @@
                 </div>
             </footer>	
 		<script src="js/jquery.js"></script>	
+		<script src="../js/cookie.js"></script>>
 		<!-- <script>
 			$("#login_top").load("http://localhost/project/data/top.html",function(){
 				
@@ -82,6 +63,6 @@
 				
 			})
 		</script> -->
-		<script src="js/require.js" data-main="js/login.js"></script>
+		<script src="../js/login.js"></script>
 </body>
 </html>

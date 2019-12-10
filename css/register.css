@@ -1,92 +1,64 @@
-#register_con {
-  width: 1200px;
+.margin {
+  width: 1090px;
+  margin: 0 auto; }
+
+#login_top {
+  height: 100px;
+  border-bottom: 1px solid #ddd; }
+  #login_top img {
+    margin-top: 15px;
+    float: left; }
+  #login_top p {
+    float: right; }
+    #login_top p img {
+      margin: 0; }
+
+#zc {
+  width: 100%;
   margin: 0 auto;
-  height: 720px; }
-  #register_con #register_conbox {
-    width: 630px;
+  background: url(https://haitao.nos.netease.com/5ea0cfc4-e31f-4582-87b6-e478a6bf6131T1912071642_1920_520.jpg) repeat -30px;
+  height: 516px;
+  position: relative; }
+  #zc .zc_z {
+    width: 340px;
     box-shadow: 0 0 2px #cecece;
     background: #fff;
     position: relative;
-    left: 300px;
-    top: 30px; }
-    #register_con #register_conbox h4 {
-      height: 40px;
-      line-height: 40px;
-      font-size: 16px;
-      border-bottom: 1px solid #eee;
-      text-align: center;
-      color: #861185;
-      font-weight: 700;
-      margin-bottom: 10px; }
-    #register_con #register_conbox form ul li .form-label {
-      width: 145px;
-      height: 32px;
-      line-height: 32px;
-      text-align: right;
-      float: left; }
-      #register_con #register_conbox form ul li .form-label em {
-        color: #ef4521; }
-    #register_con #register_conbox form ul li #green {
-      color: #00cf01; }
-    #register_con #register_conbox form ul li .form-act {
-      position: relative;
-      display: block;
-      float: left;
-      margin-left: 10px; }
-      #register_con #register_conbox form ul li .form-act input {
-        border: none;
-        background: none;
-        width: 288px;
-        height: 26px;
-        line-height: 26px;
-        padding: 1px 4px;
-        border: 1px solid #ccc; }
-      #register_con #register_conbox form ul li .form-act .caution_con {
-        position: absolute;
-        top: 33px;
-        left: 0;
-        padding: 0;
-        height: 16px;
-        white-space: nowrap;
-        font-size: 12px;
-        color: #666;
-        margin: 8px 5px;
-        color: red; }
-    #register_con #register_conbox form ul li.yanzheng .form-act input {
-      width: 80px; }
-    #register_con #register_conbox form ul li.dx_yanzheng .form-act input {
-      width: 80px; }
-    #register_con #register_conbox form ul li.dx_yanzheng .form-act a {
-      display: inline-block;
-      width: 120px;
-      height: 30px;
-      background: #861185;
-      color: #fff;
-      line-height: 30px;
-      text-align: center; }
-      #register_con #register_conbox form ul li.dx_yanzheng .form-act a:hover {
-        background: #d84406; }
-    #register_con #register_conbox form ul li.xieyi {
-      text-align: center;
-      line-height: 60px; }
-      #register_con #register_conbox form ul li.xieyi span a {
-        color: #006fff;
-        margin: 0 5px; }
-    #register_con #register_conbox form ul li #reg_btn {
-      display: block;
-      width: 300px;
-      line-height: 40px;
-      background: #861185;
-      border-radius: 2px;
-      font-size: 16px;
-      text-align: center;
-      margin: 0 auto;
-      color: #fff; }
-      #register_con #register_conbox form ul li #reg_btn:hover {
-        background: #d84406; }
-
-#register_con #register_conbox form ul li {
-  height: 60px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  font-size: 14px; }
+    left: 976px;
+    top: 100px;
+    height: 260px; }
+  #zc h1 {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    color: #861185;
+    font-weight: 700; }
+  #zc span {
+    width: 52px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 25px; }
+  #zc #reg {
+    border: 1px solid #000;
+    font: 14px /24px "";
+    background: #ddd;
+    margin-top: 15px;
+    display: inline-block;
+    width: 60px;
+    margin-left: 20px; }
+  #zc #log {
+    border: 1px solid #000;
+    font: 14px /24px "";
+    background: #ddd;
+    margin-top: 15px;
+    display: inline-block;
+    width: 60px;
+    margin-left: 30pxx; }
+  #zc #user {
+    width: 228px;
+    height: 29px; }
+  #zc #pass {
+    width: 228px;
+    height: 29px; }
