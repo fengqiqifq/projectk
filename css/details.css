@@ -21,7 +21,7 @@
     position: relative;
     margin-right: 4px;
     border: 1px solid #ccc;
-    color: #333; }
+    color: #ccc; }
 
 #magnifier {
   height: 650px; }
@@ -43,7 +43,8 @@
         position: absolute;
         left: 0;
         top: 0;
-        display: none; }
+        display: none;
+        background: #ccc; }
     #magnifier .left .bBox {
       width: 500px;
       height: 300px;

@@ -1,10 +1,10 @@
 class Magnifier{
     constructor(){
-        this.sBox = document.querySelector("#magnifier .left .sBox");
-        this.sImg = document.querySelector("#magnifier .left .sBox img");
-        this.sSpan = document.querySelector("#magnifier .left .sBox span");
-        this.bBox = document.querySelector("#magnifier .left .bBox");
-        this.bImg = document.querySelector("#magnifier .left .bBox img");
+        this.sBox = document.querySelector(".sBox");
+        this.sImg = document.querySelector(".sBox img");
+        this.sSpan = document.querySelector(".sBox span");
+        this.bBox = document.querySelector(".bBox");
+        this.bImg = document.querySelector(".bBox img");
         
         this.init()
     }
@@ -29,7 +29,7 @@ class Magnifier{
         this.sSpan.style.display = "block";
         this.bBox.style.display = "block";
         
-        this.sSpanW = (this.bBox.offsetWidth / this.bImg.offsetWidth * this.sBox.offsetWidth);
+        this.sSpanW = (this.bBox.offsetWidth /this.bImg.offsetWidth * this.sBox.offsetWidth);
         this.sSpanH = (this.bBox.offsetHeight / this.bImg.offsetHeight * this.sBox.offsetHeight);
         
         this.sSpan.style.width = this.sSpanW + "px";
@@ -45,8 +45,9 @@ class Magnifier{
         this.bImgH = this.bImg.offsetHeight;
     }
     move(e){
-        var l = e.scrollX - this.sBox.offsetLeft - this.sSpan.offsetWidth/2;
-        var t = e.scrollY - this.sBox.offsetTop - this.sSpan.offsetHeight/2;
+        var l = e.clientX - this.sBox.offsetLeft - this.sSpan.offsetWidth/2;
+        var t = e.pageY - this.sBox.offsetTop - this.sSpan.offsetHeight/2;
+        // console.log(this.sBox.offsetTop)
         if(l<0) l=0;
         if(t<0) t=0;
         if(l>this.sW - this.sSpanW){
@@ -57,6 +58,7 @@ class Magnifier{
         }
         this.sSpan.style.left = l + "px";
         this.sSpan.style.top = t + "px";
+
         this.bImg.style.left = l / (this.sW - this.sSpanW) * (this.bW - this.bImgW) + "px";
         this.bImg.style.top = t / (this.sH - this.sSpanH) * (this.bH - this.bImgH) + "px";
         

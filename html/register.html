@@ -1,103 +1,21 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-		<link rel="stylesheet" href="css/public.css"></link>
-		<link rel="stylesheet" href="css/register.css"></link>
-	</head>
-	<body>
-		<!--注册部分-->
-		<div id="register_con">
-			<div id="register_conbox">
-				<h4>用户注册</h4>
-				<form>
-					<ul>
-						<li>
-							<label class="form-label">
-								<em>*</em>手机号:
-							</label>
-							<span class="form-act">
-								<input type="text" id="tel" value="11位手机号"/>
-								<span class="caution_con"></span>
-							</span>
-							
-						</li>
-						<li>
-							<label class="form-label">
-								<em>*</em>密码:
-							</label>
-							<span class="form-act">
-								<input type="text" id="pass1" placeholder="6-20个字符,请不要输入非法字符"/>
-								<span class="caution_con"></span>
-							</span>	
-						</li>
-						<li>
-							<label class="form-label">
-								<em>*</em>确认密码:
-							</label>
-							<span class="form-act">
-								<input type="password" id="pass2" placeholder="再次填写密码"/>
-								<span class="caution_con"></span>
-							</span>
-							
-						</li>
-						<li>
-							<label class="form-label">
-								<em>*</em>姓名:
-							</label>
-							<span class="form-act">
-								<input type="text" id="username"/>
-								<span class="caution_con"></span>
-							</span>
-						</li>
-						<li>
-							<label class="form-label">
-								<em>*</em>身份证:
-							</label>
-							<span class="form-act">
-								<input type="text" id="idcard"/>
-								<span class="caution_con"></span>
-							</span>
-						</li>
-						<li class="yanzheng">
-							<label class="form-label">
-								<em>*</em>验证码:
-							</label>
-							<span class="form-act">
-								<input type="text" id="yzm" placeholder="填写验证码"/>
-								<i id="ranyzm"></i>
-								<a id="noclear">看不清楚？换一个</a>
-								<span class="caution_con"></span>
-							</span>
-						</li>
-						<li class="dx_yanzheng">
-							<label class="form-label">
-								<em>*</em>短信验证码:
-							</label>
-							<span class="form-act">
-								<input type="text" id="dxyzm"/>
-								<a href="#">获取短信验证码</a>
-								<span class="caution_con"></span>
-							</span>
-						</li>
-						<li class="xieyi">
-							<input type="checkbox" id="chek"/>
-							<span>我已阅读并同意<a>会员注册协议</a>和<a>隐私保护政策</a></span>
-						</li>
-						<li>
-							<a id="reg_btn">注册</a>
-						</li>
-					</ul>
-				</form>
-				<span id='s'></span>
-			</div>
-			
-			
-			
-		</div>
-		<script src="js/register.js"></script>
-		<script src="js/jquery.js"></script>
-		<script src="js/require.js" data-main="http://localhost/project/js/main.js"></script>
-	</body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>这是注册页面</h1>
+    用户名：<input type="text" id="user" /><br />
+    密码：<input type="text" id="pass" /><br />
+    <input type="button" id="reg" value="立即注册" />
+    <input type="button" id="log" value="去登录" />
+    <span></span>
+</body>
+<script src="../js/cookie.js"></script>
+<script src="../js/register.js"></script>
 </html>

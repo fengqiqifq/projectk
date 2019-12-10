@@ -19,7 +19,7 @@
     position: relative;
     margin-right: 4px;
     border: 1px solid #ccc;
-    color:#333;
+    color:#ccc;
         }
     }
 }
@@ -45,6 +45,7 @@
               left: 0;
               top: 0;
               display: none;
+              background:#ccc;
             }
           }
           .bBox {
