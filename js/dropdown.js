@@ -1,0 +1,9 @@
+;(function($){
+    $("dl.t4").mouseenter(function(){
+        console.log(this)
+        $(this).find("dd").stop().show();
+    });
+    $("dl.t4").mouseleave(function(){
+        $(this).find("dd").stop().hide();
+    })
+})(jQuery);

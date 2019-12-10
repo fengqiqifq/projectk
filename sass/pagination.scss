@@ -1,0 +1,30 @@
+.pagination {
+	text-align: center;
+	a {
+	  text-decoration: none;
+	  border: 1px solid #aae;
+	  color: #15b;
+	}
+	.current {
+	  background: #26b;
+	  color: #fff;
+	  border: 1px solid #aae;
+	}
+  }
+  .pagination a, .pagination span {
+	display: inline-block;
+	padding: 0.1em 0.4em;
+	margin-right: 5px;
+	margin-bottom: 5px;
+  }
+  .pagination .current.prev, .pagination .current.next {
+	color: #999;
+	border-color: #999;
+	background: #fff;
+  }
+  .Pagination {
+	margin-top: 12px;
+	vertical-align: middle;
+	text-align: center;
+  }
+  
