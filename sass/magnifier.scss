@@ -48,10 +48,10 @@
 }
 .bBox {
   width: 400px;
-  height: 300px;
+  height: 400px;
   position: absolute;
-  left: 500px;
-  top: 400px;
+  left: 557px;
+  top: 360px;
   overflow: hidden;
   display: none;
   border:1px solid #000;
@@ -63,7 +63,7 @@
   }
 }
 #xiangqing {
-  height:1090px;
+  height:500px;
   .left{
     float:left;
     width: 500px;
@@ -79,11 +79,10 @@
     .top{
       height:24px;
           span{
-       
         margin-top:5px;
       }
     }
-    p{
+    h4{
       font-weight: 600;
     font-size: 18px;
     line-height: 26px;
@@ -92,10 +91,196 @@
     .dingjin{
       height:146px;
       background-color: #f9f9f9;
-       z-index: 22;
-    margin-bottom: 12px;
-    width:658px;
+      margin-bottom: 12px;
+      width:658px;
+      p{
+        margin-top:10px;
+          span{
+          font-size:12px;
+          color: #666;
+          display:inline-block;
+          margin-right:30px; 
+          margin-left:8px;          
+        }
+        .red{
+          color:red;
+          font-weight: 700px;
+          font-size:26px;text-align: center;         
+        }
+       em{
+         color:red;
+          font-size:16px;
+          margin-left:14px;        
+      }
+      i{
+        margin-left:20px;       
+        b{
+          color: red;
+        }
+      }
+      b{
+        margin-left:8px;
     }
-    
+    u{
+      margin-left: 10px;
+      font-size: 12px;
+      margin-right:47px;
+      span{
+        color: #333;
+        font-size: 12px;
+         margin-left:60px;
+      }
+    }
+  }
+  .dz{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #1e1e1e;
+    margin-left:116px;
+    font-weight: 700;
+  }
+      .kt{
+      color: #4a90e2;
+      margin-left:125px;
+        font-weight: 700;
+      }
+    }
+    #btn{
+      width: 160px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #e31436;
+    border: none;
+    margin-right: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+    display:inline-block
+    }
+    #btn2{
+      width: 160px;
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    margin-right: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+    display:inline-block;
+    border:1px solid #000;
+    }
+  }
+}
+#recommend{
+  z-index: 10;
+  height:300px;
+  h2{
+    font-size:16px;
+    color:#000;
+    margin-left:5px;
+  }
+  ul{
+    border:1px solid #ddd;
+    padding:10px;
+    height:180px;
+    margin-top:25px;
+    li{
+      width:140px;
+      margin-left:32px;
+      float: left;
+      a{
+        img{
+          width:110px;
+          height:110px;
+        }
+        h3{
+          font-size:12px;
+          color:#333;
+          height:43px;
+        }
+        p{
+          color:red;
+          font-weight: 700;
+          font-size:16px;
+
+        }
+        span{
+          font-size:12px;
+          color:#999;
+        }
+      }
+
+    }
+  }
+}
+#details{
+  .left{
+    float:left;
+    width:178px;
+    border:1px solid #ddd;
+    border-bottom:0;
+    ul{
+      
+      h4{
+        height:30px;
+        border-bottom:1px solid #ddd;
+        font:700 16px/30px "";
+        padding-left:5px;
+        
+      }
+      li{
+        border-bottom:1px solid #ddd;
+        text-align: center;
+        padding:5px;
+        a{
+          img{
+            width:110px;
+           height:110px;
+          
+           vertical-align: middle;
+          }
+          h3{
+            margin-left:5px;
+            word-break: break-all;
+            color: #333; 
+          }
+          p{
+            font-size: 18px;
+            color: #d22146;
+            height: 24px;
+            line-height: 22px;
+            font-weight: bold;
+          }
+          span{
+            color: #999;
+          }
+        }
+      }
+    }
+  }
+  .right{
+    width:890px;
+    float:left;
+    margin-left:20px;
+    h3{
+
+      border:1px solid #ddd;
+      height:50px;
+      font:700 18px/50px "";
+      padding-left:15px;
+      color:red;
+
+
+ 
+
+    }
   }
 }
