@@ -43,37 +43,48 @@
     #login_con #login_conbox #user {
       width: 200px;
       border: 0;
-      border: 1px solid #000;
+      border: 1px solid red;
       height: 25px;
       margin-top: 20px; }
     #login_con #login_conbox #pass {
       width: 200px;
       border: 0;
-      border: 1px solid #000;
+      border: 1px solid red;
       height: 25px;
       margin-top: 20px; }
-  #login_con #s {
-    position: absolute;
-    top: 500px; }
+
+#login_con .qita {
+  border-top: 1px solid #ddd;
+  margin-top: 35px; }
+  #login_con .qita i {
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 10px; }
+  #login_con .qita em {
+    line-height: 22px;
+    cursor: pointer;
+    color: #e31436; }
 
 #forget {
-  border: 1px solid #000;
+  border: 1px solid  red;
   font: 14px /24px "";
-  background: #ddd;
+  background: #f79090;
   margin-top: 15px;
   display: inline-block;
   width: 60px;
-  margin-left: 20px; }
+  margin-left: 70px;
+  border-radius: 3px; }
 
 #free_reg {
-  border: 1px solid #000;
+  border: 1px solid  red;
   font: 14px /24px "";
-  background: #ddd;
+  background: #f79090;
   margin-top: 15px;
   display: inline-block;
   width: 60px;
   margin-left: 20px;
-  text-align: center; }
+  text-align: center;
+  border-radius: 3px; }
 
 footer {
   background: #fff; }

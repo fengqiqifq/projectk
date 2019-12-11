@@ -46,88 +46,63 @@
       #user{
         width:200px;
         border:0;
-        border:1px solid #000;
+        border:1px solid red;
         height:25px;
         margin-top:20px;
       }
       #pass{
         width:200px;
         border:0;
-        border:1px solid #000;
+        border:1px solid red;
         height:25px;
         margin-top:20px;
       }
-     
-    }
-    #s{
-        position: absolute;
-        top:500px;
+      
+   
     }
   }
-        // #jizhu {
-        //   input {
-        //     border: none;
-        //     background: none;
-        //   }
-         
+  #login_con{
+    
+      .qita{
+        border-top: 1px solid #ddd;
+        margin-top:35px;
+        i{
+          margin-top:10px;
+          display: inline-block;
+          margin-left:10px;
+    
+        }
+        em{
+          line-height: 22px;
+    cursor: pointer;
+    color: #e31436;
+        }
+      }
 
-        //         #jizhu {
-        //           span {
-        //             margin: 20px 20px 0 20px;
-        //             height: 40px;
-        //             display: block;
-        //             color: #333;
-        //           }
-        //         }
-
-
-        //       #jizhu {
-        //         span {
-        //           .for_remebertxt {
-        //             margin-left: 5px;
-        //             margin-right: 15px;
-        //           }
-        //           .for_autologintxt {
-        //             margin-left: 5px;
-        //             margin-right: 15px;
-        //           }
-        //         }
-        //       }
-        
-        //   #dl {
-        //     #sub {
-        //       display: block;
-        //       width: 310px;
-        //       line-height: 40px;
-        //       background:red;
-        //       border-radius: 2px;
-        //       font-size: 20px;
-        //       text-align: center;
-        //       margin: 10px auto;
-        //       color: #fff;
-        //     }
-        //   }
-        // }
+  }
         #forget{
-          border:1px solid #000;
+          border:1px solid  red;
           font:14px /24px "";
-          background:#ddd;
+          background:rgb(247, 144, 144);
          margin-top:15px;
          display:inline-block;
          width:60px;
-         margin-left:20px
+         margin-left: 70px;
+    border-radius: 3px;
 
         }
         #free_reg{
-          border:1px solid #000;
+          border:1px solid  red;
           font:14px /24px "";
-          background:#ddd;
+          background:rgb(247, 144, 144);
          margin-top:15px;
          display:inline-block;
          width:60px;
          margin-left:20px;
          text-align:center;
+         border-radius: 3px;
         }
+        
     footer{
         background:#fff;
         
