@@ -1087,16 +1087,16 @@ overflow: hidden;
       background:pink;
     }
     span{
-      display: table-cell;
-text-align: center;
-vertical-align: middle;
-width: 82px;
-overflow: hidden;
-    }     
-          }
-          }
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+        width: 82px;
+        overflow: hidden;
+          }     
         }
       }
+    }
+  }
       .right{
         overflow: hidden;
         float:left;
@@ -1176,23 +1176,23 @@ overflow: hidden;
     }
    
   }
-
-
   .louceng {
     width: 80px;
-    height: 204px;
+    height:168px;
     position: fixed;
     right: 20px;
     bottom: 40px;
-    background: #fff;
+    background: red;
+    border-radius: 5px;
     li {
-      height: 49px;
+      height: 41px;
       text-align: center;
       font-size: 16px;
-      color: #000;
+      color: #fff;
       cursor: pointer;
-      border: 1px solid #ff9;
+      border-bottom: 1px solid #ddd;
       line-height: 49px;
+      font-weight: 700;
       
     }
   }
@@ -1212,35 +1212,7 @@ overflow: hidden;
       padding:28px 0 0 5px;
     }
   }
-  #cont {
-
-    overflow: hidden;
-    width:1090px;
-   
-    .classification{
-      width: 250px;
-    
-      box-sizing: border-box;
-     
-      float: left;
-      p {
-        line-height: 20px;
-        height:40px;
-        overflow: hidden;
-        font:700 16px/40px "";
-      }
-      img {
-        width: 80%;
-        height: 200px;
-        border: 1px solid #ddd;
-        padding: 20px;
-      }
-      span{
-        font:700 16px/40px "";
-        color:red;
-      }
-    }
-  }
+ 
   #btmlist{
     height:147px;
     margin-top:40px;
@@ -1254,17 +1226,16 @@ overflow: hidden;
     width: 233px;
     margin-left: 39px;
         p{
+         float: left;
           width: 44px;
           height: 44px;
-          float: left;
           border-radius: 50%;
           border: 2px solid #d6d6d6;
           text-align: center;
           line-height: 44px;
           font-size: 20px;
           font-weight: 700;
-          display: inline-block;
-         
+          display: inline-block;   
           margin-right: 12px;
         }
         strong{
@@ -1361,4 +1332,33 @@ overflow: hidden;
     }
   }
   
-  
+  #cont{
+    overflow: hidden;
+    width:1090px;
+    ul{
+      li{
+        width: 250px;
+    
+        box-sizing: border-box;
+       
+        float: left;
+    
+      img{
+        width: 80%;
+        height: 200px;
+        border: 1px solid #ddd;
+        padding: 20px;
+      }
+      h3{
+        line-height: 20px;
+        height:40px;
+        overflow: hidden;
+        font:700 16px/40px "";
+      }
+      p{
+        font:700 16px/40px "";
+        color:red
+      }
+    }
+  }
+}

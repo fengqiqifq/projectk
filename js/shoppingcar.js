@@ -24,16 +24,16 @@ class Car {
             for (var j = 0; j < this.goods.length; j++) {
                 if (this.res[i].goodsId === this.goods[j].id) {
                     str += `<tr index="${this.res[i].goodsId}">
-                           <td><input type="checkbox" class="che"/></td>
+                           <td><input type="checkbox" id="che"/></td>
                             <td><img src="${this.res[i].img}"/></td>
                             <td>${this.res[i].name}</td>
-                            <td>${this.res[i].price}</td>
+                            <td class="jg">${this.res[i].price}</td>
                             <td><input type="number" min="1" value="${this.goods[j].num}"/></td>
                            <td><s>${parseInt(this.res[i].price) * this.goods[j].num}</s></td>
                             <td class="delete">删除</td>
                             </tr>`;
                 }
-                console.log(str)
+                // console.log(str)
             }
         }
         this.tbody.innerHTML = str
@@ -59,10 +59,17 @@ class Car {
             if (target.tagName == "INPUT") {
                 that.id = target.parentNode.parentNode.getAttribute("index");
                 that.changeCookie(function(i){
-                    that.goods[i].num=target.value;
+                    that.goods[i].num = target.value;
                 });
-                eve.target.parentNode.parentNode.querySelector("s").innerHTML = parseInt (eve.target.parentNode.parentNode.querySelector("i").innerHTML)* eve.target.value;
-                console.log(parseInt (eve.target.parentNode.parentNode.querySelector("i").innerHTML))
+                console.log(target.value);
+                eve.target.parentNode.parentNode.querySelector("s").innerHTML = parseInt (eve.target.parentNode.parentNode.querySelector(".jg").innerHTML)* eve.target.value;
+
+                // console.log(parseInt (eve.target.parentNode.parentNode.querySelector("s")))
+                // console.log(parseInt (eve.target.parentNode.parentNode.querySelector("s").innerHTML)
+// )
+                // console.log(eve.target.value)
+                // console.log(parseInt(eve.target.value))
+                console.log(parseInt (eve.target.parentNode.parentNode.querySelector("s").innerHTML))
 
             }
         })
@@ -79,9 +86,3 @@ class Car {
     
 }
 new Car;
-
-// $(".selectAll").click(function(){
-//     console.log(1)
-// 	$(".che").prop("checked",$(this).prop("checked"))
-    
-// })

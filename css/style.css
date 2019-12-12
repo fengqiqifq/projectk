@@ -948,19 +948,21 @@ button {
 
 .louceng {
   width: 80px;
-  height: 204px;
+  height: 168px;
   position: fixed;
   right: 20px;
   bottom: 40px;
-  background: #fff; }
+  background: red;
+  border-radius: 5px; }
   .louceng li {
-    height: 49px;
+    height: 41px;
     text-align: center;
     font-size: 16px;
-    color: #000;
+    color: #fff;
     cursor: pointer;
-    border: 1px solid #ff9;
-    line-height: 49px; }
+    border-bottom: 1px solid #ddd;
+    line-height: 49px;
+    font-weight: 700; }
 
 #like {
   height: 63px; }
@@ -975,27 +977,6 @@ button {
     color: #666;
     padding: 28px 0 0 5px; }
 
-#cont {
-  overflow: hidden;
-  width: 1090px; }
-  #cont .classification {
-    width: 250px;
-    box-sizing: border-box;
-    float: left; }
-    #cont .classification p {
-      line-height: 20px;
-      height: 40px;
-      overflow: hidden;
-      font: 700 16px/40px ""; }
-    #cont .classification img {
-      width: 80%;
-      height: 200px;
-      border: 1px solid #ddd;
-      padding: 20px; }
-    #cont .classification span {
-      font: 700 16px/40px "";
-      color: red; }
-
 #btmlist {
   height: 147px;
   margin-top: 40px;
@@ -1008,9 +989,9 @@ button {
       width: 233px;
       margin-left: 39px; }
       #btmlist ul li p {
+        float: left;
         width: 44px;
         height: 44px;
-        float: left;
         border-radius: 50%;
         border: 2px solid #d6d6d6;
         text-align: center;
@@ -1086,3 +1067,24 @@ footer {
     footer p i img {
       width: 27px;
       height: 30px; }
+
+#cont {
+  overflow: hidden;
+  width: 1090px; }
+  #cont ul li {
+    width: 250px;
+    box-sizing: border-box;
+    float: left; }
+    #cont ul li img {
+      width: 80%;
+      height: 200px;
+      border: 1px solid #ddd;
+      padding: 20px; }
+    #cont ul li h3 {
+      line-height: 20px;
+      height: 40px;
+      overflow: hidden;
+      font: 700 16px/40px ""; }
+    #cont ul li p {
+      font: 700 16px/40px "";
+      color: red; }
