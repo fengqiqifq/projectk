@@ -1,0 +1,27 @@
+tr {
+  padding: 3px;
+  border: 1px solid #ddd; }
+  tr td {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700; }
+    tr td.name {
+      font-weight: 100;
+      font-size: 14px;
+      text-align: center; }
+    tr td img {
+      width: 100px; }
+
+table {
+  text-align: center; }
+
+.ge {
+  border: 1px solid #ddd;
+  line-height: 30px;
+  text-align: center; }
+
+.sl input {
+  width: 70px; }
+
+.delete {
+  cursor: pointer; }

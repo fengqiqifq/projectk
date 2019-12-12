@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="../css/public.css"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/shoppingcar.css"/>
+    
     <style>
-        /* img {
-            width: 100px;
-        } */
+        
     </style>
 </head>
 <body>
@@ -95,16 +94,16 @@
         </div>
     </header>
   
-    <table  cellspacing="0" width=1000px align=center border="1">
+    <table  cellspacing="0" width=1000px align=center>
         <thead>
-            <tr style="background:rgb(248, 125, 125);line-height: 30px;text-align: center;">
-                <td><input type="checkbox" id="c"/>全选</td>
+            <tr  class="ge">
+                <td>全选<input type="checkbox" id="c"/></td>
                 <td>图片</td>
-                <td>名字</td>
-                <td>价格</td>
+                <td>商品信息</td>
+                <td>单价(元)</td>
                 <td>数量</td>
-                <td>小计</td>
-                <td>删除</td>
+                <td>金额</td>
+                <td>操作</td>
             </tr>
         </thead>
         <tbody class="qx">
@@ -229,8 +228,10 @@
                 </div>
             </footer>
 </body>
+<script src="../js/jquery.js"></script>
 <script src="../js/ajax.js"></script>
 <script src="../js/cookie.js"></script>
 <script src="../js/shoppingcar.js"></script>
 <script src="../js/qx.js"></script>
+
 </html>

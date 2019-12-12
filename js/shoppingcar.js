@@ -24,11 +24,11 @@ class Car {
             for (var j = 0; j < this.goods.length; j++) {
                 if (this.res[i].goodsId === this.goods[j].id) {
                     str += `<tr index="${this.res[i].goodsId}">
-                           <td><input type="checkbox" id="che"/></td>
+                           <td class="qx"><input type="checkbox" class="c"/></td>
                             <td><img src="${this.res[i].img}"/></td>
-                            <td>${this.res[i].name}</td>
+                            <td class="name">${this.res[i].name}</td>
                             <td class="jg">${this.res[i].price}</td>
-                            <td><input type="number" min="1" value="${this.goods[j].num}"/></td>
+                            <td class="sl"><input type="number" class="n" min="1" value="${this.goods[j].num}"/></td>
                            <td><s>${parseInt(this.res[i].price) * this.goods[j].num}</s></td>
                             <td class="delete">删除</td>
                             </tr>`;
@@ -45,7 +45,7 @@ class Car {
             var target = e.target || e.srcElement;
             if (target.className == "delete") {
                 that.id = target.parentNode.getAttribute("index");
-                console.log(target.parentNode.getAttribute("index"))
+                (target.parentNode.getAttribute("index"))
                 target.parentNode.remove();
 
                 that.changeCookie(function(i){
@@ -56,20 +56,21 @@ class Car {
         this.tbody.addEventListener("input", function (eve) {
             var e = eve || window.event;
             var target = e.target || e.srcElement;
-            if (target.tagName == "INPUT") {
+            if (target.className == "n") {
                 that.id = target.parentNode.parentNode.getAttribute("index");
                 that.changeCookie(function(i){
                     that.goods[i].num = target.value;
                 });
                 console.log(target.value);
-                eve.target.parentNode.parentNode.querySelector("s").innerHTML = parseInt (eve.target.parentNode.parentNode.querySelector(".jg").innerHTML)* eve.target.value;
+                eve.target.parentNode.parentNode.querySelector("s").innerHTML = parseInt (eve.target.parentNode.parentNode.querySelector(".jg").innerHTML)* parseInt(eve.target.value);
 
+                // console.log(typeof (parseInt (eve.target.parentNode.parentNode.querySelector(".jg").innerHTML)))
                 // console.log(parseInt (eve.target.parentNode.parentNode.querySelector("s")))
                 // console.log(parseInt (eve.target.parentNode.parentNode.querySelector("s").innerHTML)
 // )
                 // console.log(eve.target.value)
                 // console.log(parseInt(eve.target.value))
-                console.log(parseInt (eve.target.parentNode.parentNode.querySelector("s").innerHTML))
+                // console.log(parseInt (eve.target.parentNode.parentNode.querySelector("s").innerHTML))
 
             }
         })
